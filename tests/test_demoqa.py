@@ -1,6 +1,9 @@
+import allure
 from data.users import User
 from pages.registration_page import RegistrationPage
 
+@allure.tag('web')
+@allure.title('Successful fill form')
 def test_enter_data():
     registration_page = RegistrationPage()
 
